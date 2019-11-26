@@ -1,4 +1,19 @@
 % emd 分解法使用
+% 加载数据
+data = importdata('1.txt',',',0);
+% data = importdata('gm.txt',',',0);
+% 电流电压
+
+% figure(7);
+% plot(data(:,1));
+% figure(8);
+% plot(data(:,2));
+
+start = 350000;
+step = 50000;
+% 取一小段测试一下 需要对应
+current = data(start:(start+step),2);
+volt = data(start:(start+step),1);
 
 
 % 不需要 参数就是过零的变极性焊接
@@ -61,18 +76,11 @@ figure(6);
 plot(current);
 title('current');
 
-% hht transform
-% figure(7);
-% for i=1:volt_len
-%     subplot(volt_len,1,i);
-%     plot(hht(imf_volt(:,i)));
-%     title(['hht-volt', num2str(i)]);
-% end
-% figure(8);
-% for i=1:curr_len
-%     subplot(curr_len,1,i);
-%     plot(hht(imf_curr(:,i)));
-%     title(['hht-curr', num2str(i)]);
-% end
+figure(7);
+for i=1:volt_len
+    subplot(curr_len,1,i);
+    plot(imf_curr(:,i));
+end
+figure(8);
 
 
