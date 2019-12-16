@@ -25,6 +25,7 @@ showall
 volt = dadi_volt;
 current = dadi_curr;
 emdTest
+fftTest
 % 计算对应的IMF的 HHT 变换
 hhtTest
 

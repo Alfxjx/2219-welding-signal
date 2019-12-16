@@ -24,42 +24,42 @@ curr_len = size(imf_curr,2);
 
 % 绘制电压的imf图
 figure(1);
-for i=1:volt_len
-    subplot(volt_len,1,i);
-    plot(imf_volt(:,i));
-    title(['volt',num2str(i)]);
-    % subplot(10,4,(4*i-1));
-    % plot(fftshift(imf_volt(:,i)));
-end
-% 绘制对应imf的傅里叶频谱
-figure(2);
-for i=1:volt_len
-    subplot(volt_len,1,i);
-    plot(fftshift(imf_volt(:,i)));
-    title(['volt-fft',num2str(i)]);
-    % subplot(10,4,(4*i-1));
-    % plot(fftshift(imf_volt(:,i)));
-end
-% 电流的imf & fft
-figure(3);
+% for i=1:volt_len
+%     subplot(volt_len,1,i);
+%     plot(imf_volt(:,i));
+%     title(['volt',num2str(i)]);
+%     % subplot(10,4,(4*i-1));
+%     % plot(fftshift(imf_volt(:,i)));
+% end
+% % 绘制对应imf的傅里叶频谱
+% figure(2);
+% for i=1:volt_len
+%     subplot(volt_len,1,i);
+%     plot(fftshift(imf_volt(:,i)));
+%     title(['volt-fft',num2str(i)]);
+%     % subplot(10,4,(4*i-1));
+%     % plot(fftshift(imf_volt(:,i)));
+% end
+% % 电流的imf & fft
+% figure(3);
 for i=1:curr_len
     subplot(curr_len,1,i);
     plot(imf_curr(:,i));
     title(['curr',num2str(i)]);
 end    
-figure(4);
-for i=1:curr_len
-    subplot(curr_len,1,i);
-    plot(fftshift(imf_curr(:,i)));
-    title(['curr-fft',num2str(i)]);
-end  
+% figure(4);
+% for i=1:curr_len
+%     subplot(curr_len,1,i);
+%     plot(fftshift(imf_curr(:,i)));
+%     title(['curr-fft',num2str(i)]);
+% end  
 
-figure(5);
-plot(volt);
-title('volt');
-figure(6);
-plot(current);
-title('current');
+% figure(5);
+% plot(volt);
+% title('volt');
+% figure(6);
+% plot(current);
+% title('current');
 
 % hht transform
 % figure(7);

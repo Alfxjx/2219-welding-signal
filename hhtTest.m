@@ -10,6 +10,13 @@ t_c = (0:length(imf_curr)-1)/fs;
 
 figure(8);
 hht(imf_curr,fs);
-ylim([0 13000]);
+ylim([0 6000]);
 xlabel('Time(s)');
 title('curr hht');
+
+figure(9);
+[hs,f,t] = hht(imf_curr);
+mesh(seconds(t),f,hs,'EdgeColor','none','FaceColor','interp');
+xlabel('Time')
+ylabel('Frequency')
+zlabel('Instantaneous Energy')
