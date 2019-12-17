@@ -4,7 +4,7 @@
 importData
 
 % 对数据进行一个简单的观察
-% showbrief
+showbrief
 
 % 设置取样位置和取样的长度
 start1 = input('input start dadi: ');
@@ -36,5 +36,8 @@ hhtTest
 % emdTest
 % % 计算对应的IMF的 HHT 变换
 % hhtTest
+
+% 计算时频熵
+tfEN
 
 

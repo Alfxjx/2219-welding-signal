@@ -1,10 +1,10 @@
 figure(1);
 plot(dadi(:,1));
-title('dadi volt');
+title('volt');
 
 figure(2);
 plot(dadi(:,2));
-title('dadi curr');
+title('curr');
 
 % figure(3);
 % plot(gm(:,1));
