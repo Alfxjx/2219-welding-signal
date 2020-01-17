@@ -11,11 +11,14 @@
 % for m=1:length(volt)
 %     volt(m) = volt(m)-min_volt;
 % end
+% 
+% [imf_volt,residual_volt] = emd(volt);
+% [imf_curr,residual_curr] = emd(current);
 
-[imf_volt,residual_volt] = emd(volt);
-[imf_curr,residual_curr] = emd(current);
+% imf_volt = eemd(volt,0.2,20);
+imf_curr = eemd(current,0,1);
 
-volt_len = size(imf_volt,2);
+% volt_len = size(imf_volt,2);
 curr_len = size(imf_curr,2);
 
 % plot(imf_volt(:,4));
