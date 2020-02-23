@@ -1,5 +1,5 @@
 fs = 100000;
-t_v = (0:length(imf_volt)-1)/fs;
+% t_v = (0:length(imf_volt)-1)/fs;
 t_c = (0:length(imf_curr)-1)/fs;
 
 % figure(7);
@@ -10,7 +10,7 @@ t_c = (0:length(imf_curr)-1)/fs;
 
 figure(8);
 hht(imf_curr,fs);
-ylim([0 6000]);
+ylim([0 2000]);
 xlabel('Time(s)');
 title('curr hht');
 

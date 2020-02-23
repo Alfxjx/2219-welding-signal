@@ -1,10 +1,17 @@
 figure(1);
 plot(dadi(:,1));
-title('volt');
+ylim([-50,50]);
+ylabel('voltage(V)');
+xlabel('Time(0.01ms)');
+title('voltage');
 
 figure(2);
 plot(dadi(:,2));
-title('curr');
+ylim([-400,400]);
+ylabel('current(A)')
+xlabel('Time(0.01ms)');
+title('current');
+
 
 % figure(3);
 % plot(gm(:,1));
