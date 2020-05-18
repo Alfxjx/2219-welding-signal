@@ -1,4 +1,4 @@
-cond = '333.txt';
+cond = '111.txt';
 for i=0:8
     if i==0
         pos = 1;
